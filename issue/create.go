@@ -23,7 +23,7 @@ File to update
 https://github.com/kubernetes/website/blob/dev-1.17-ja.2/content/ja/%s
 
 Original
-https://github.com/kubernetes/website/blob/release-1.17/content/en/docs/%s
+https://github.com/kubernetes/website/blob/release-1.17/content/en/%s
 
 diff between translated and v1.17
 %s
