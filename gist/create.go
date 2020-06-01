@@ -46,7 +46,8 @@ func CreateRequestBody(before string, after string, content string) RequestBody 
 	return *gist
 }
 
-func Create() {
+// Create creates a new gist and return the URL
+func Create() string {
 	url := "https://api.github.com/gists"
 
 	client := &http.Client{}
@@ -75,5 +76,5 @@ func Create() {
 	if err := json.Unmarshal(body, &r); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("URL: %s\n", r.URL)
+	return r.URL
 }
