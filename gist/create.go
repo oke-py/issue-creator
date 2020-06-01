@@ -57,7 +57,7 @@ func Create() string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	gist := CreateRequestBody("upstream/release-1.17", "upstream/release-1.18", string(stdin))
+	gist := CreateRequestBody("upstream/release-1.15", "upstream/release-1.17", string(stdin))
 
 	j, _ := json.Marshal(gist)
 	b := bytes.NewBuffer(j)
