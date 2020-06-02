@@ -1,6 +1,9 @@
 package issue
 
-import "fmt"
+import (
+	"fmt"
+	"net/url"
+)
 
 // CreateBody returns RequestBody for POST /repos/kubernetes/website/issues
 func CreateBody(path string, gistURL string) string {
@@ -10,7 +13,7 @@ func CreateBody(path string, gistURL string) string {
 <!-- See https://kubernetes.io/docs/contribute/start/ for guidance on writing an actionable issue description. -->
 
 **What would you like to be added**
-Update %s to follow v1.17 of the original (Englist) text.
+Update %s to follow v1.17 of the original (English) text.
 
 **Why is this needed**
 content/ja/%s is outdated.
@@ -37,5 +40,13 @@ ref
 
 If you have a question, feel free to ask us at slack.k8s.io #kubernetes-docs-ja channel.`,
 		path, path, path, path, gistURL,
+	)
+}
+
+// Create creates a new issue and return the URL
+func Create(path string, gistURL string) string {
+	return fmt.Sprintf("https://github.com/kubernetes/website/issues/new?title=%s&body=%s",
+		url.QueryEscape(fmt.Sprintf("ja: Make %s follow v1.17 of the original text", path)),
+		url.QueryEscape(CreateBody(path, gistURL)),
 	)
 }

@@ -11,6 +11,6 @@ import (
 func main() {
 	gistURL := gist.Create()
 
-	issueBody := issue.CreateBody(os.Getenv("IC_FILEPATH"), gistURL)
-	fmt.Printf("%s\n", issueBody)
+	issueURL := issue.Create(os.Getenv("IC_FILEPATH"), gistURL)
+	fmt.Printf("%s\n", issueURL)
 }
