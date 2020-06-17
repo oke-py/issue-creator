@@ -32,7 +32,7 @@ diff between translated and v1.17
 %s
 
 **Note**
-Currently, we use dev-1.17-ja.2 branch. Please open a PR targeting the branch.
+Currently, we use **dev-1.17-ja.3** branch. Please open a PR targeting the branch.
 
 ref
 [How To Contribute](https://kubernetes-docs-ja.kibe.la/shared/entries/c5878aa5-ad1f-4f29-a5bb-25853cbc14ec)
