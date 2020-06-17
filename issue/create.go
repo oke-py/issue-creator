@@ -23,7 +23,7 @@ content/ja/%s is outdated.
 /good-first-issue
 
 File to update
-https://github.com/kubernetes/website/blob/dev-1.17-ja.2/content/ja/%s
+https://github.com/kubernetes/website/blob/dev-1.17-ja.3/content/ja/%s
 
 Original
 https://github.com/kubernetes/website/blob/release-1.17/content/en/%s
