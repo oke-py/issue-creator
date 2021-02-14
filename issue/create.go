@@ -23,16 +23,16 @@ content/ja/%s is outdated.
 /good-first-issue
 
 File to update
-https://github.com/kubernetes/website/blob/dev-1.18-ja.1/content/ja/%s
+https://github.com/kubernetes/website/tree/dev-1.18-ja.2/content/ja/%s
 
 Original
-https://github.com/kubernetes/website/blob/fb6364d/content/en/%s
+https://github.com/kubernetes/website/tree/release-1.18/content/en/%s
 
 diff between translated and v1.18
 %s
 
 **Note**
-Currently, we use **dev-1.18-ja.1** branch. Please open a PR targeting the branch.
+Currently, we use **dev-1.18-ja.2** branch. Please open a PR targeting the branch.
 
 ref
 https://kubernetes.io/ja/docs/contribute/localization/
